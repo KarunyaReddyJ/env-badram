@@ -1,16 +1,18 @@
 
 function checkEnvVars(requiredVars) {
-    // Checking if the input is an array
-    if (!Array.isArray(requiredVars)) {
-        throw new TypeError('Expected an array of environment variable names');
-    }
-
     // Checking if `dotenv` is installed 
     try {
         require.resolve('dotenv');
     } catch (e) {
         console.warn('Warning: `dotenv` is not installed. Please install it if you are using environment variables.');
     }
+
+    
+    // Checking if the input is an array
+    if (!Array.isArray(requiredVars)) {
+        throw new TypeError('Expected an array of environment variable names');
+    }
+    
 
     // Checking for missing environment variables
     requiredVars.forEach((varName) => {
