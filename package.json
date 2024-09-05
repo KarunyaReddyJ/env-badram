@@ -1,0 +1,19 @@
+{
+  "name": "env-badram",
+  "version": "1.0.0",
+  "description": "A simple utility for checking if required environment variables are set in Node.js applications. Ensures that all specified environment variables are present before your application starts running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "environment",
+    "variables",
+    "check",
+    "node",
+    "utility"
+  ],
+  "author": "Karunya Reddy",
+  "license": "MIT",
+  "dependencies": {}
+}
